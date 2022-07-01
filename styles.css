@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+body {
+  overflow-x: hidden;
+  font-family: "Public Sans", sans-serif;
+  background-color: #fafafa;
+
+  margin: 0;
+  padding: 0;
+}
+
+/*Navigation*/
+#navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  
+    width: 100vw;
+    height: 10vh;
+  
+    margin: 0;
+    padding: 0;
+  }
+  #navContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75vw;
+  }
+  #navContent img {
+    width: 10vw;
+    aspect-ratio: auto;
+  }
+  #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+  
+    height: 100%;
+    width: 30%;
+    margin: 0;
+  }
+  #menu a {
+    margin: 0;
+    padding-bottom: 3.5vh;
+    font-size: 0.9vw;
+    font-weight: 400;
+    color: #a2a1a5;
+    text-decoration: none;
+  }
+  #menu a:hover {
+    color: black;
+    text-decoration: none;
+  
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-image-source: linear-gradient(
+      90deg,
+      hsla(136, 65%, 51%, 1) 0%,
+      hsla(192, 70%, 51%, 1) 100%
+    );
+  }
+
+
+
+#intro {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+}
+
+#intro .image {
+  position: absolute;
+
+  left: 55vw;
+  width: 53vw;
+  height: auto;
+  margin-top: -17vh;
+  z-index: -1;
+}
+
+#intro .svg {
+  position: absolute;
+  left: 42vw;
+  margin-top: -37.5vh;
+  width: 90vw;
+  height: auto;
+
+  z-index: -2;
+}
+
+#introText {
+  position: absolute;
+  top: 20vh;
+  left: 9vw;
+  font-size: 4vw;
+}
+
+#introText h1 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 5% 0;
+  color: #2F2F4B;
+}
+
+#introText p {
+  font-size: 0.32em;
+  line-height: 4vh;
+  margin: 0;
+  color: #9A9B9F;
+}
+
+
+
+
+
+#whySection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #f4f5f7;
+
+  margin: 0;
+  padding: 0;
+
+  z-index: -2;
+}
+
+
+.requestButton {
+  width: 11vw;
+  height: auto;
+  aspect-ratio: 38 / 9.5;
+
+  border-radius: 40px;
+  border-style: none;
+  background: linear-gradient(
+    90deg,
+    hsla(136, 65%, 51%, 1) 0%,
+    hsla(192, 70%, 51%, 1) 100%
+  );
+
+  color: white;
+  font-weight: 700;
+  font-size: 0.95vw;
+
+  margin: 0;
+  padding: 0;
+}
+.requestButton:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+@media all and (display-mode: fullscreen) {
+  #intro .svg {
+    margin-top: -32.5vh;
+  }
+  #intro .image {
+    margin-top: -14.5vh;
+  }
+
+  #intro {
+    height: 80vh;
+  }
+}
