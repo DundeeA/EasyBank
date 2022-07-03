@@ -9,6 +9,15 @@ body {
   padding: 0;
 }
 
+h1,h2,h3,h4{
+  color: #2f2f4b;
+}
+
+p{
+  color: #9a9b9f;
+}
+
+
 /*Navigation*/
 #navBar {
   display: flex;
@@ -67,6 +76,8 @@ body {
   );
 }
 
+/*Introduction section*/
+
 #intro {
   position: relative;
   width: 100vw;
@@ -102,17 +113,18 @@ body {
 
 #introText h1 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0 0 5% 0;
-  color: #2f2f4b;
 }
 
 #introText p {
   font-size: 0.32em;
   line-height: 4vh;
   margin: 0;
-  color: #9a9b9f;
 }
+
+
+/*Why Section*/
 
 #whySection {
   display: flex;
@@ -124,49 +136,78 @@ body {
   margin: 0;
   padding: 6% 0 0 8%;
   z-index: -2;
+
+  font-size: 2.3vw;
 }
 
 #whySection h2 {
-  font-size: 2.3vw;
+  font-size: 1em;
   font-weight: 300;
-  color: #2f2f4b;
   margin: 0 0 1% 0;
 }
 
 #whySection p {
-  font-size: 1vw;
+  font-size: .55em;
   font-weight: 300;
-  width: 36vw;
+  width: 45vw;
   line-height: 3.2vh;
-  color: #9a9b9f;
+
+  margin: 0;
 }
 
 #infoCards {
   display: flex;
   flex-direction: row;
 
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 
   margin-top: 8vh;
   width: 80vw;
 
 }
 
-#infoCards h3 {
-   font-size: 1em;
-  font-weight: 300;
+#infoCards h4 {
+   font-size: 1.2em;
+   font-weight: 300;
+   margin-bottom: 8%;
 }
 
 #infoCards p {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 300;
-  width: 17.28vw;
+ width: 15.8vw;
 }
 
 #infoCards .card {
   width: 17vw;
   margin-right: 4%;
 }
+
+/*Articles section*/
+#articles{
+width: 100vw;
+height: 70vh;
+margin: 0;
+padding: 5% 0 0 8%;
+font-size: 2.65vw;
+}
+
+#articles h3{
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.articleCard{
+width: 17vw;
+height: 50vh;
+background-color: #f4f5f7;
+}
+
+.articleCard img{
+width: 100%;
+border-radius: 5px 5px 0 0;
+}
+
 
 
 .requestButton {
