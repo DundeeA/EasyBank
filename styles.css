@@ -35,6 +35,7 @@ small {
   margin: 0;
   padding: 0;
 }
+
 #navContent {
   display: flex;
   flex-direction: row;
@@ -42,10 +43,12 @@ small {
   align-items: center;
   width: 75vw;
 }
+
 #navContent img {
   width: 10vw;
   aspect-ratio: auto;
 }
+
 #menu {
   display: flex;
   flex-direction: row;
@@ -57,6 +60,7 @@ small {
   width: 30%;
   margin: 0;
 }
+
 #menu a {
   margin: 0;
   padding-bottom: 3.5vh;
@@ -65,6 +69,7 @@ small {
   color: #a2a1a5;
   text-decoration: none;
 }
+
 #menu a:hover {
   color: black;
   text-decoration: none;
@@ -203,7 +208,6 @@ small {
   flex-direction: row;
   justify-content: space-between;
 
-
   width: 80vw;
 }
 
@@ -245,19 +249,76 @@ small {
 }
 
 .articleContent h4:hover {
-color: #32C587;
-cursor: pointer;
+  color: #32c587;
+  cursor: pointer;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-
-footer{
-
-width: 100vw;
-height: 17vh;
-background-color: #2D314E;
+  width: 100vw;
+  height: 17vh;
+  padding: 0;
+  margin: 0;
+  background-color: #2d314e;
 }
 
+/*Footer Nav links*/
+
+#footerLinks {
+  padding-top: 3vh;
+  margin-left: 7vw;
+}
+
+#footerLinks ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+
+  height: 11vh;
+  width: 20vw;
+  padding: 0;
+  margin: 0;
+}
+
+#footerLinks li {
+  text-align: left;
+  margin-bottom: 1.5vh;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+#footerLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+#footerLinks a:hover {
+  color: #32c587;
+  cursor: pointer;
+}
+
+#socialSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10vw;
+  margin-left: 12vw;
+  color: white;
+}
+
+#socialLinks .icon {
+  margin: 0.2vw;
+}
+
+#footerLogo {
+  width: 6vw;
+  color: red;
+  margin-bottom: 4vh;
+}
 
 .requestButton {
   width: 11vw;
@@ -289,6 +350,7 @@ background-color: #2D314E;
   #intro .svg {
     margin-top: -32.5vh;
   }
+
   #intro .image {
     margin-top: -14.5vh;
   }
