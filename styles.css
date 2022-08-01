@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 
-body {
+html{
   overflow-x: hidden;
+}
+
+body {
   font-family: "Public Sans", sans-serif;
   background-color: #fafafa;
 
@@ -63,7 +66,7 @@ small {
 
 #menu a {
   margin: 0;
-  padding-bottom: 3.5vh;
+  padding-bottom: 3.6vh;
   font-size: 0.9vw;
   font-weight: 400;
   color: #a2a1a5;
@@ -268,8 +271,11 @@ footer {
 /*Footer Nav links*/
 
 #footerLinks {
-  padding-top: 3vh;
-  margin-left: 7vw;
+  display: flex;
+  align-items: center;
+  padding-top: 1vh;
+  margin-left: 3vw;
+  
 }
 
 #footerLinks ul {
@@ -278,16 +284,20 @@ footer {
   flex-wrap: wrap;
   list-style: none;
 
-  height: 11vh;
-  width: 20vw;
+  height: 12vh;
   padding: 0;
   margin: 0;
 }
 
 #footerLinks li {
   text-align: left;
-  margin-bottom: 1.5vh;
-  font-size: 0.9rem;
+  
+
+    margin-bottom: .8vh;
+    margin-top: .8vh;
+    margin-right: 7vw;
+
+  font-size: 0.8rem;
   font-weight: 300;
 }
 
@@ -305,8 +315,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 10vw;
-  margin-left: 12vw;
+  width: 15vw;
+  margin-left: 10vw;
   color: white;
 }
 
@@ -314,11 +324,31 @@ footer {
   margin: 0.2vw;
 }
 
+#socialLinks .icon:hover {
+  filter: invert(59%) sepia(88%) saturate(352%) hue-rotate(103deg) brightness(94%) contrast(84%);
+}
+
 #footerLogo {
   width: 6vw;
   color: red;
   margin-bottom: 4vh;
 }
+
+#creditSection{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-left: 35%;
+}
+#creditSection p{
+margin-top: 2vh;
+}
+
+#creditSection .requestButton{
+  width: 10vw;
+  }
+
 
 .requestButton {
   width: 11vw;
