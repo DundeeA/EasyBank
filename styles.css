@@ -66,26 +66,36 @@ small {
 
 #menu a {
   margin: 0;
-  padding-bottom: 3.6vh;
   font-size: 0.9vw;
   font-weight: 400;
   color: #a2a1a5;
   text-decoration: none;
 }
 
-#menu a:hover {
-  color: black;
-  text-decoration: none;
+#menu li{
+  margin-top: 3.9vh;
+}
 
-  border-bottom: 10px solid;
-  border-image-slice: 1;
-  border-width: 4px;
-  border-image-source: linear-gradient(
+#menu li::after{
+	content: '';
+	display: block;
+	margin: auto;
+	height: 4px;
+	width: 0px;
+	background: transparent;
+  margin-top: 3.6vh;
+	transition: width .3s ease, background-color .3s ease;
+}
+
+#menu li:hover:after {
+	width: 100%;
+	background: linear-gradient(
     90deg,
     hsla(136, 65%, 51%, 1) 0%,
     hsla(192, 70%, 51%, 1) 100%
   );
 }
+
 
 /*Introduction section*/
 
@@ -244,6 +254,7 @@ small {
   font-size: 0.55em;
   font-weight: 300;
   margin: 2% 0 3% 0;
+  transition: ease-in 0.2s;
 }
 
 .articleContent p {
@@ -275,7 +286,6 @@ footer {
   align-items: center;
   padding-top: 1vh;
   margin-left: 3vw;
-  
 }
 
 #footerLinks ul {
@@ -284,7 +294,7 @@ footer {
   flex-wrap: wrap;
   list-style: none;
 
-  height: 12vh;
+  height: 11.5vh;
   padding: 0;
   margin: 0;
 }
@@ -309,6 +319,7 @@ footer {
 #footerLinks a:hover {
   color: #32c587;
   cursor: pointer;
+  transition: ease-in 0.2s;
 }
 
 #socialSection {
@@ -326,6 +337,7 @@ footer {
 
 #socialLinks .icon:hover {
   filter: invert(59%) sepia(88%) saturate(352%) hue-rotate(103deg) brightness(94%) contrast(84%);
+  transition: ease-in 0.2s;
 }
 
 #footerLogo {
@@ -339,7 +351,10 @@ footer {
   flex-direction: column;
   align-items: flex-end;
 
-  margin-left: 35%;
+  width: 20vw;
+  margin-top: 2vh;
+  margin-left: 30vw;
+  margin-right: 5vw;
 }
 #creditSection p{
 margin-top: 2vh;
@@ -372,8 +387,9 @@ margin-top: 2vh;
 }
 
 .requestButton:hover {
-  opacity: 60%;
+  box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
   cursor: pointer;
+  transition: ease-in 0.3s;
 }
 
 @media all and (display-mode: fullscreen) {
