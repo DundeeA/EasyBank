@@ -47,7 +47,7 @@ small {
   width: 75vw;
 }
 
-#navContent img {
+#navContent .logo {
   width: 10vw;
   aspect-ratio: auto;
 }
@@ -98,6 +98,14 @@ small {
 
 #menu a:hover{
   color: black;
+}
+
+#hamburgerIcon {
+   height: .7em;
+   width: 1.4em;
+   margin-left: 52vw;
+   z-index: 2;
+  display: none;
 }
 
 /*Introduction section*/
@@ -197,6 +205,7 @@ small {
   font-size: 0.8em;
   font-weight: 300;
   width: 15.8vw;
+  margin: 0;
 }
 
 #infoCards .card {
@@ -513,29 +522,173 @@ margin-top: 2vh;
   #menu a{
     font-size: 1.6vw;
     }
-    
+
     #footerLinks li {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
 
 }
 
 @media (max-width: 600px) {
-       /*Intro repositiong*/
-       #intro {
-        height: 30vh;
-       }
-    
-      #intro .svg {
-        margin-top: -10.5vh;
-      }
-    
-      #intro .image {
-        margin-top: -5vh;
-      }
+  /*Intro repositiong*/
+  #intro {
+   height: 30vh;
+  }
 
-      #introText {
-        top: 6vh;
-      }
+ #intro .svg {
+   margin-top: -10.5vh;
+ }
+
+ #intro .image {
+   margin-top: -5vh;
+ }
+
+ #introText {
+   top: 6vh;
+ }
 
 }
+
+
+/*Mobile screens*/
+
+@media (max-width: 550px) {
+   
+/*Navigation*/
+#navBar {
+  height: 5vh;
+}
+
+#hamburgerIcon {
+  display: inline;
+
+}
+
+#navContent {
+  width: 100vw;
+}
+
+#navContent .logo {
+  width: 32vw;
+  margin-left: 5vw;
+}
+
+#navContent .requestButton{
+  visibility: hidden;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+
+  height: 100%;
+  width: 30%;
+  margin: 0;
+  
+  visibility: hidden;
+}
+
+#menu li{
+  margin-top: 3.9vh;
+}
+
+#menu a {
+  margin: 0;
+  font-size: 0.9vw;
+  font-weight: 400;
+  text-decoration: none;
+  color: #9a9b9f;
+}
+
+  /*Why section*/
+  #whySection {
+  align-items: center;
+  padding: 8% 0 0 0;
+  }
+
+  #whySection h2 {
+    font-size: 3em;
+    width: 45vw;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+
+  #whySection .description{
+    font-size: 1.7em;
+    line-height: 1.3em;
+    width: 90vw;
+    text-align: center;
+  }
+  
+  #infoCards {
+    align-items: center;
+   flex-direction: column;
+  }
+
+  #infoCards h4 {
+    font-size: 4em;
+  }
+
+  #infoCards p {
+    font-size: 3.2em;
+    line-height: 1.3em;
+    padding: 0;
+    margin: 0 0 5vh 0; 
+    width: 100%;
+  }
+
+  #infoCards .card {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+
+   margin: 0;
+   width: 90vw;  
+
+  }
+
+ /*Article section*/
+
+  #articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    margin: 0;
+    padding: 10% 0% 0% 0%;
+    font-size: 3vw;
+  }
+
+  #articleCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  }
+
+  #articles h3 {
+    font-size: 2em;
+  }
+
+  .articleCard {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    
+    font-size: 7vw;
+    background-color: #ffff;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 3vh;
+  }
+
+  .articleCard img {
+    height: 20vh;
+    width: 100%;
+  }
+
+}
+
