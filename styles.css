@@ -10,6 +10,7 @@ body {
 
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 h1,
@@ -602,6 +603,48 @@ margin-top: 2vh;
   text-decoration: none;
   color: #9a9b9f;
 }
+
+
+/*Introduction section*/
+  #intro{
+   height: 78vh;
+  }
+
+  #intro .svg {
+    content: url('./images/bg-intro-mobile.svg');
+    width: 100vw;
+    left: 0vw;
+    margin-top: -8vh;
+  }
+
+  #intro .image {
+    left: 5vw;
+    width: 90vw;
+    margin-top: -14.6vh;
+    z-index: -1;
+  }
+  
+
+  #introText {
+    position: absolute;
+    top: 38vh;
+    left: 7vw;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  #introText p {
+    width: 85vw;
+    font-size: 0.4em;
+    line-height: 3vh;
+    margin-bottom: 2vh;
+  }
+
+  #intro .requestButton{
+    font-size: .35em;
+    width: 45vw;
+  }
+
 
   /*Why section*/
   #whySection {
