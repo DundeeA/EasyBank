@@ -104,7 +104,7 @@ small {
 #hamburgerIcon {
    height: .7em;
    width: 1.4em;
-   margin-left: 52vw;
+   margin-left: 48vw;
    z-index: 2;
   display: none;
 }
@@ -153,6 +153,7 @@ small {
 #introText p {
   font-size: 0.32em;
   line-height: 4vh;
+  width: 32vw;
   margin: 0;
 }
 
@@ -557,12 +558,12 @@ margin-top: 2vh;
    
 /*Navigation*/
 #navBar {
-  height: 5vh;
+  height: 7vh;
 }
 
 #hamburgerIcon {
   display: inline;
-
+ 
 }
 
 #navContent {
@@ -571,7 +572,7 @@ margin-top: 2vh;
 
 #navContent .logo {
   width: 32vw;
-  margin-left: 5vw;
+  margin-left: 8vw;
 }
 
 #navContent .requestButton{
@@ -607,7 +608,7 @@ margin-top: 2vh;
 
 /*Introduction section*/
   #intro{
-   height: 78vh;
+   height: 90vh;
   }
 
   #intro .svg {
@@ -618,7 +619,7 @@ margin-top: 2vh;
   }
 
   #intro .image {
-    left: 5vw;
+    left: 7vw;
     width: 90vw;
     margin-top: -14.6vh;
     z-index: -1;
@@ -627,8 +628,7 @@ margin-top: 2vh;
 
   #introText {
     position: absolute;
-    top: 38vh;
-    left: 7vw;
+    top: 47vh;
     text-align: center;
     font-size: 2.5em;
   }
@@ -734,4 +734,3 @@ margin-top: 2vh;
   }
 
 }
-
