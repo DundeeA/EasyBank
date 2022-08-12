@@ -579,30 +579,38 @@ margin-top: 2vh;
   visibility: hidden;
 }
 
-#menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+#menu{
+  display: none; /*Switch to flex when toggled*/
   align-items: center;
-  list-style: none;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
 
-  height: 100%;
-  width: 30%;
+  top: 9vh;
+  left: 5vw;
+
+  height: 33vh;
+  width: 89vw;
+
+  padding: 0;
   margin: 0;
-  
-  visibility: hidden;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
 }
 
 #menu li{
-  margin-top: 3.9vh;
+   display: flex;
+   justify-content: center;
+   margin: 0 0 4% 0;
+   padding: 0;
 }
 
 #menu a {
   margin: 0;
-  font-size: 0.9vw;
+  font-size: 1.1em;
   font-weight: 400;
   text-decoration: none;
-  color: #9a9b9f;
+  color: #2f2f4b;
 }
 
 /*Introduction section*/
@@ -747,6 +755,7 @@ footer {
 
 #socialSection {
   justify-content: center;
+  align-items: center; 
   width: auto;
   margin: 0;
 }
