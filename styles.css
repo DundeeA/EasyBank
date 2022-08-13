@@ -11,6 +11,8 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+
+  overflow-x: hidden;
 }
 
 h1,
@@ -102,12 +104,16 @@ small {
 }
 
 #hamburgerIcon {
-   height: .7em;
+   height: .8em;
    width: 1.4em;
    margin-left: 48vw;
    z-index: 2;
   display: none;
+
+  transition: ease-in-out 1s;
 }
+
+
 
 /*Introduction section*/
 
@@ -558,7 +564,9 @@ margin-top: 2vh;
    
 /*Navigation*/
 #navBar {
+  position: fixed;
   height: 7vh;
+  z-index: 99;
 }
 
 #hamburgerIcon {
@@ -589,7 +597,7 @@ margin-top: 2vh;
   top: 9vh;
   left: 5vw;
 
-  height: 33vh;
+  height: 37vh;
   width: 89vw;
 
   padding: 0;
@@ -611,6 +619,18 @@ margin-top: 2vh;
   font-weight: 400;
   text-decoration: none;
   color: #2f2f4b;
+}
+
+#menuBackground{
+position: absolute;
+width: 100vw;
+height: 100vh;
+
+top: 7vh;
+
+background: linear-gradient(0deg, rgba(34,193,195,0) 0%, rgba(0,0,0,0.3001401244091386) 73%);
+z-index: -1;
+display: none;
 }
 
 /*Introduction section*/
