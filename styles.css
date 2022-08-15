@@ -11,9 +11,8 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-
   overflow-x: hidden;
-}
+} 
 
 h1,
 h2,
@@ -807,4 +806,24 @@ footer {
   font-size: .9em;
 }
 
+}
+
+
+
+@keyframes openMenu {
+  0% {
+    transform: translateY(-110%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-110%);
+  }
 }
