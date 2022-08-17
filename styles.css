@@ -637,6 +637,8 @@ margin-top: 2vh;
   margin: 0;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
+
+  animation-fill-mode: both;
 }
 
 #menu li{
