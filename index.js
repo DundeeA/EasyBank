@@ -20,6 +20,7 @@ menuButton.addEventListener('click', (e) =>{
     document.querySelector('html').style.overflow = 'visible'; //enable scrolling
    }else{
     menuIcon.style.content = "url('./images/icon-close.svg')"; //change icon to 'X'
+    menu.style.opacity = '0%';
     //play open animation
     menu.style.animation="openMenu .7s";
     menuBg.style.animation = 'fadeBgIn .7s ease-in';
@@ -27,6 +28,7 @@ menuButton.addEventListener('click', (e) =>{
     setTimeout(() => {
       menu.style.display = 'flex';
       menuBg.style.display = 'block'; 
+      menu.style.opacity = '100%';
    }, 100);
 
 
