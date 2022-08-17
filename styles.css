@@ -103,7 +103,6 @@ small {
 color: black;
 }
 
-
 #menuBackground{
   position: absolute;
   width: 100vw;
@@ -155,6 +154,8 @@ color: black;
   height: auto;
   margin-top: -17vh;
   z-index: -1;
+
+  animation: loadIn .7s ease-in;
 }
 
 #intro .svg {
@@ -165,6 +166,7 @@ color: black;
   height: auto;
 
   z-index: -2;
+  animation: loadIn .4s ease-in;
 }
 
 #introText {
@@ -172,6 +174,8 @@ color: black;
   top: 20vh;
   left: 9vw;
   font-size: 4vw;
+
+  animation: loadIn .7s ease-in;
 }
 
 #introText h1 {
@@ -877,3 +881,14 @@ footer {
   
   }
 
+
+/*First load animations*/
+
+@keyframes loadIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100;
+  }
+  }

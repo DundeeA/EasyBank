@@ -24,8 +24,12 @@ menuButton.addEventListener('click', (e) =>{
     menu.style.animation="openMenu .7s";
     menuBg.style.animation = 'fadeBgIn .7s ease-in';
     //Show menu
-    menu.style.display = 'flex';
-    menuBg.style.display = 'block'; 
+    setTimeout(() => {
+      menu.style.display = 'flex';
+      menuBg.style.display = 'block'; 
+   }, 100);
+
+
     document.querySelector('html').style.overflow = 'hidden'; // disable scrolling
    }
    menuOpen = !menuOpen;
