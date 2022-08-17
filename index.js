@@ -27,7 +27,7 @@ menuButton.addEventListener('click', (e) =>{
     setTimeout(() => {
       menu.style.display = 'flex';
       menuBg.style.display = 'block'; 
-   }, 100);
+   }, 2000);
 
 
     document.querySelector('html').style.overflow = 'hidden'; // disable scrolling
