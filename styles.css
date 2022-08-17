@@ -60,17 +60,24 @@ small {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-
-  height: 100%;
   width: 30%;
   margin: 0;
 }
 
 #menu li{
-  margin-top: 3.9vh;
+  margin: 3.9vh 0 0 0;
 }
 
-#menu li::after{
+#menu a {
+  margin: 0;
+  height: 5vh;
+  font-size: 0.9vw;
+  font-weight: 400;
+  text-decoration: none;
+  color: #9a9b9f;
+}
+
+#menu a::after{
 	content: '';
 	display: block;
 	margin: auto;
@@ -81,7 +88,7 @@ small {
 	transition: width .3s ease, background-color .3s ease;
 }
 
-#menu li:hover:after{
+#menu a:hover:after{
 	width: 100%;
 	background: linear-gradient(
     90deg,
@@ -90,17 +97,10 @@ small {
   );
 }
 
-#menu a {
-  margin: 0;
-  font-size: 0.9vw;
-  font-weight: 400;
-  text-decoration: none;
-  color: #9a9b9f;
+#menu a:hover{
+color: black;
 }
 
-#menu a:hover{
-  color: black;
-}
 
 #menuBackground{
   position: absolute;
@@ -118,12 +118,8 @@ small {
   animation-timing-function: ease-in-out;
   }
 
-
 #menuButton{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
+  display: none;
 
   height: 7vh;
   width: 25vw;
@@ -135,7 +131,7 @@ small {
 }
 
 #hamburgerIcon {
-   height: .8em;
+   height: 1em;
    width: 1.4em;
    z-index: 2;
   display: none;
@@ -401,6 +397,7 @@ margin: 0.2vw;
   margin-left: 30vw;
   margin-right: 5vw;
 }
+
 #creditSection p{
 text-align: right;
 margin-top: 2vh;
@@ -409,7 +406,6 @@ margin-top: 2vh;
 #creditSection .requestButton{
   width: 10vw;
   }
-
 
 .requestButton {
   width: 11vw;
@@ -435,7 +431,7 @@ margin-top: 2vh;
 .requestButton:hover {
   box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
   cursor: pointer;
-  transition: ease-in 0.3s;
+  transition: ease-in 0.1s;
 }
 
 @media all and (display-mode: fullscreen) {
@@ -634,8 +630,8 @@ margin-top: 2vh;
 #menu li{
    display: flex;
    justify-content: center;
+   height: 4.5vh;
    margin: 0 0 4% 0;
-   padding: 0;
 }
 
 #menu a {
@@ -644,6 +640,12 @@ margin-top: 2vh;
   font-weight: 400;
   text-decoration: none;
   color: #2f2f4b;
+}
+
+#menuButton{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 
