@@ -65,12 +65,14 @@ small {
 }
 
 #menu li{
-  margin: 3.9vh 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 }
 
 #menu a {
   margin: 0;
-  height: 5vh;
   font-size: 0.9vw;
   font-weight: 400;
   text-decoration: none;
@@ -557,6 +559,10 @@ margin-top: 2vh;
       font-size: 0.7rem;
     }
 
+    #menu li{
+      margin-top: 20%;
+     }
+
 }
 
 @media (max-width: 600px) {
@@ -575,6 +581,9 @@ margin-top: 2vh;
 
  #introText {
    top: 6vh;
+ }
+ #menu li{
+  margin-top: 25%;
  }
 
 }
