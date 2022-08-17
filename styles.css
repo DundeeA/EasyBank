@@ -630,7 +630,7 @@ margin-top: 2vh;
 
   top: 9vh;
   left: 5vw;
-  height: 37vh;
+  height: 37vh; 
   width: 89vw;
 
   padding: 0;
@@ -638,7 +638,6 @@ margin-top: 2vh;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
 
-  animation-fill-mode: both;
 }
 
 #menu li{
