@@ -1,40 +1,36 @@
-const menuIcon = document.getElementById('hamburgerIcon');
-const menuButton = document.getElementById('menuButton');
-const menuBg = document.getElementById('menuBackground');
-const menu = document.getElementById('menu');
+const menuIcon = document.getElementById("hamburgerIcon");
+const menuButton = document.getElementById("menuButton");
+const menuBg = document.getElementById("menuBackground");
+const menu = document.getElementById("menu");
 let menuOpen = false;
 
 //Toggle mobile menu
-menuButton.addEventListener('click', (e) =>{
-   if(menuOpen){
+menuButton.addEventListener("click", (e) => {
+  if (menuOpen) {
     menuIcon.style.content = "url('./images/icon-hamburger.svg')"; //change icon back
     //play close animation
-    menu.style.animation="closeMenu .7s"; 
-    menuBg.style.animation = 'fadeBgOut .7s ease-in';
+    menu.style.animation = "closeMenu .7s";
+    menuBg.style.animation = "fadeBgOut .7s ease-in";
     //hide menu
     setTimeout(() => {
-       menu.style.display = 'none';
-       menuBg.style.display = 'none';
+      menu.style.display = "none";
+      menuBg.style.display = "none";
     }, 700);
     //enable scrolling
-    document.querySelector('html').style.overflow = 'visible'; 
-   }else{
+    document.querySelector("html").style.overflow = "visible";
+  } else {
     menuIcon.style.content = "url('./images/icon-close.svg')"; //change icon to 'X'
-    menu.style.opacity = '0%';
+    menu.style.opacity = "0%";
     //play open animation
-    menu.style.animation="openMenu .7s";
-    menuBg.style.animation = 'fadeBgIn .7s ease-in';
+    menu.style.animation = "openMenu .7s";
+    menuBg.style.animation = "fadeBgIn .7s ease-in";
     //Show menu
     setTimeout(() => {
-      menu.style.display = 'flex';
-      menuBg.style.display = 'block'; 
-      menu.style.opacity = '100%';
-   }, 100);
-    document.querySelector('html').style.overflow = 'hidden'; // disable scrolling
-   }
-   menuOpen = !menuOpen;
-})
-
-
-
-
+      menu.style.display = "flex";
+      menuBg.style.display = "block";
+      menu.style.opacity = "100%";
+    }, 100);
+    document.querySelector("html").style.overflow = "hidden"; // disable scrolling
+  }
+  menuOpen = !menuOpen;
+});
