@@ -193,9 +193,9 @@ small {
   margin: 0;
 }
 
-/*Why Section*/
+/*About Section*/
 
-#whySection {
+#aboutSection {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -208,13 +208,13 @@ small {
   font-size: 2.3vw;
 }
 
-#whySection h2 {
+#aboutSection h2 {
   font-size: 1em;
   font-weight: 300;
   margin: 0 0 1% 0;
 }
 
-#whySection p {
+#aboutSection p {
   font-size: 0.55em;
   font-weight: 300;
   width: 45vw;
@@ -484,7 +484,7 @@ footer {
     font-size: 0.7rem;
   }
 
-  #whySection p {
+  #aboutSection p {
     line-height: 1.6vh;
   }
 
@@ -694,20 +694,20 @@ footer {
     width: 45vw;
   }
 
-  /*Why section*/
-  #whySection {
+  /*About section*/
+  #aboutSection {
     align-items: center;
     padding: 8% 0 0 0;
   }
 
-  #whySection h2 {
+  #aboutSection h2 {
     font-size: 3em;
     width: 45vw;
     margin-bottom: 2vh;
     text-align: center;
   }
 
-  #whySection .description {
+  #aboutSection .description {
     font-size: 1.7em;
     line-height: 1.3em;
     width: 90vw;
