@@ -21,6 +21,6 @@ I got to work developing the sections from top to bottom starting with the navig
 
 
 ### Screenshots 
-[Desktop](https://i.imgur.com/9h8R33N.png)
+[Desktop image](https://i.imgur.com/9h8R33N.png)
 
-[mobile](https://i.imgur.com/u3mriXE.png)
+[Mobile image](https://i.imgur.com/u3mriXE.png)
